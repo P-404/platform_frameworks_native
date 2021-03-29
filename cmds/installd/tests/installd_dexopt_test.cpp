@@ -351,7 +351,7 @@ protected:
             uid = kTestAppUid;
         }
         if (class_loader_context == nullptr) {
-            class_loader_context = "&";
+            class_loader_context = "PCL[]";
         }
         std::unique_ptr<std::string> package_name_ptr(new std::string(package_name_));
         int32_t dexopt_needed = 0;  // does not matter;
