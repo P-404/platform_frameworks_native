@@ -257,6 +257,7 @@ static int otapreopt_chroot(const int argc, char **arg) {
     static constexpr const std::string_view kRequiredApexs[] = {
       "com.android.art",
       "com.android.runtime",
+      "com.android.sdkext",  // For derive_classpath
     };
     for (std::string_view apex : kRequiredApexs) {
         if (std::none_of(active_packages.begin(), active_packages.end(),
